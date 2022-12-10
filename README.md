@@ -2,6 +2,11 @@
 
 GraphQL API for my blog application
 
+## Update db via Prisma
+```
+npx prisma db push
+```
+
 ## How to run project?
 
 ```
