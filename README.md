@@ -9,3 +9,10 @@ cd graphql-blog
 npm i
 npm start:dev
 ```
+
+### Tech Stack
+- GraphQL
+- Prisma 
+- PostgreSQL
+- Node.js with TypeScript
+- React.js
