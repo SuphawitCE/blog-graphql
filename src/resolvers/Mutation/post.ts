@@ -185,7 +185,7 @@ export const postResolvers = {
     }
 
     return {
-      userErrors: [{ message: "Forbidden access (unauthenticated)" }],
+      userErrors: [],
       post: prisma.post.update({ where: { id: +postId } }),
       data: {
         published: true,
@@ -215,7 +215,7 @@ export const postResolvers = {
     }
 
     return {
-      userErrors: [{ message: "Forbidden access (unauthenticated)" }],
+      userErrors: [],
       post: prisma.post.update({ where: { id: +postId } }),
       data: {
         published: false,
