@@ -12,11 +12,11 @@ export const typeDefs = gql`
 
     # Authentication
     signup(
-      email: String!
+      credentials: CredentialInput!
       name: String!
-      password: String!
       bio: String!
-    ): AuthPayload
+    ): AuthPayload!
+    signin(credentials: CredentialInput!): AuthPayload!
   }
 
   type Post {
@@ -59,5 +59,10 @@ export const typeDefs = gql`
   input PostInput {
     title: String
     content: String
+  }
+
+  type CredentialInput {
+    email: String!
+    password: String!
   }
 `;
