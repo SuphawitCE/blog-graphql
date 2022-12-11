@@ -15,6 +15,12 @@ npm i
 npm start:dev
 ```
 
+## Environment Variables
+```
+DATABASE_URL=your_postresql_url
+JWT_SIGNATURE=some_random_string
+```
+
 ### Tech Stack
 - GraphQL
 - Prisma 
